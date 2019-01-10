@@ -4,6 +4,7 @@ class Field extends Component {
     constructor(props){
         super(props)
         this.state = { value: props.initialValue }
+        this.handleChange = this.handleChange.bind(this)
     }
 
     handleChange(event) {
